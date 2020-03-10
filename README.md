@@ -6,10 +6,10 @@ An OAI-PMH endpoint implemented over Nationalmuseums REST API. Only a subset of 
 
 With [pipenv](https://pipenv.readthedocs.io/en/latest/).
 
-´´´bash
+```bash
 pipenv install
 pipenv run flask run
-´´´
+```
 
 ## Deployment
 

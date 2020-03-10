@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>{{ response_date }}</responseDate>
+  <request verb="Identify">{{ base_url }}</request>
+  <Identify>
+    <repositoryName>{{ repository_name }}</repositoryName>
+    <baseURL>{{ base_url }}</baseURL>
+    <protocolVersion>2.0</protocolVersion>
+    <earliestDatestamp>1998-01-25</earliestDatestamp>
+    <adminEmail>{{ admin_email }}</adminEmail>
+    <deletedRecord>no</deletedRecord>
+    <granularity>YYYY-MM-DD</granularity>
+  </Identify>
+</OAI-PMH>

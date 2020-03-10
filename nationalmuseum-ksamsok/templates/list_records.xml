@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>{{ response_date }}</responseDate>
+  <request verb="ListRecords" set="{{ set }}" metadataPrefix="ksamsok-rdf">{{ base_url }}</request>
+  <ListRecords>
+    {% for record in records %}
+      <record>
+        <header>
+          <identifier>{{ record[1] }}</identifier>
+          <datestamp>{{ response_date }}</datestamp>
+          <setSpec>{{ set }}</setSpec>
+        </header>
+        
+        <metadata>
+          {% autoescape false %}
+          {{ record[0] }}
+          {% endautoescape %}
+        </metadata>
+      </record>
+    {% endfor %}
+    <resumptionToken>{{ resumption_token }}</resumptionToken>
+  </ListRecords>
+</OAI-PMH>

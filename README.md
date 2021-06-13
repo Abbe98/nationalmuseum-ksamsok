@@ -13,7 +13,7 @@ pipenv run flask run
 
 ## Deployment
 
-The dockerfile within this repository can be used for deployment behind a webserver such as Nginx or Apache acting which would act as a reverse proxy. You will however need to update the variables in `.env`, in particular `BASEURL`(The URL exposed to the public) and `ADMINEMAIL`. 
+The dockerfile within this repository can be used for deployment behind a webserver such as Nginx or Apache which would act as a reverse proxy. You will however need to update the variables in `.env`, in particular `BASEURL`(The URL exposed to the public) and `ADMINEMAIL`. 
 
 Running with Docker:
 
